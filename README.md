@@ -98,13 +98,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any inquiries, please contact [chafchafine@gmail.com](mailto:chafchafine@gmail.com).
 
 ```
-
-
-
-### Notes:
-
-1. **Images**: Replace `home.png`, `tasks.png`, and `authentication.png` with the actual filenames of your images in the `todo/static/images/` directory.
-2. **Customization**: Update the `LICENSE` file with your name and the year.
-3. **Repository URL**: Replace `https://github.com/memlens/todo-list.git` with the actual URL of your GitHub repository.
-
-Avec ces fichiers, votre projet sera bien documenté sur GitHub, et les utilisateurs pourront facilement voir les fonctionnalités grâce aux images intégrées.
