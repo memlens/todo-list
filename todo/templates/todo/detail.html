@@ -1,0 +1,23 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+
+
+<div class="card border-primary mb-3 mx-auto w-50">
+    <div class="card-header"><strong>{{task.user|upper}}</strong></div>
+        <div class="card-body">
+            <p><strong>USER : {{task.user}}</strong></p>
+            <p><strong>TITLE : {{task.title}}</strong></p>
+            <p><strong>DESCRIPTION :{{task.description}}</strong></p>
+            <p><strong>COMPLETED : {{task.completed|yesno|upper}}</strong></p>
+            <p><strong>CREATED AT : {{task.created_at}}</strong></p>
+        </div>
+  </div>
+
+  <div class="text-center">
+    <a class="btn btn-secondary" href="{% url 'tasks' %}">Return</a>
+    <a class="btn btn-info" href="{% url 'update-task' task.id %}">Update</a>
+    <a class="btn btn-danger" href="{% url 'delete-task' task.id %}">Delete</a>
+  </div>
+  <br>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'todo/base.html' %}
+
+
+{% block content %}
+
+
+    <div class="container text-center">
+        <h3>Welcome to the tasks user {{user}} 👋!</h3>
+
+        <hr>
+
+        <a class="btn btn-secondary" href="{% url 'create-task' %}">Create a new task</a>
+
+    </div>  
+
+    <br>
+
+    <table class="table-layout mx-auto table table-hover table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">User</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Completed</th>
+            <th scope="col">Created At</th>
+            <th scope="col">View</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% if tasks %}
+                {% for task in tasks %}
+                <tr>
+                    <td>{{task.user}}</td>
+                    <td>{{task.title}}</td>
+                    <td>{{task.description}}</td>
+                    <td>{{task.completed|yesno|upper}}</td>
+                    <td>{{task.created_at}}</td>
+                    <td><a href="{% url 'task-detail' task.id %}">Details</a></td>
+                </tr>
+            {% endfor %}
+          {% endif %}
+        </tbody>
+      </table>
+
+    
+
+
+{% endblock %}

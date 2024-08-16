@@ -1,0 +1,19 @@
+{% extends 'todo/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+    <div class="container bg-light shadow p-5 form-layout">
+        <form autocomplete="off" method="post">
+            {% csrf_token %}
+            <button class="btn border-danger btn-light text-danger w-100" type="submit">Do you really want to delete the task : "<strong>{{task.title}}</strong>" </button>
+        </form>
+        <br>
+        <hr>
+
+        <div class="text-center">
+            <a class="btn btn-secondary" href="{% url 'tasks' %}">Cancel</a>
+        </div>
+
+    </div>
+    <br>
+{% endblock %}

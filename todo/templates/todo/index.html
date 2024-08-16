@@ -1,0 +1,19 @@
+{% extends 'todo/base.html' %}
+{% load static %}
+{% block content %}
+
+
+    <div class="text-center">
+        <h3> This is a cool and simple app to manage your tasks</h3>
+
+        <h5>Just use it ! 👍</h5>
+
+        <hr>
+
+        <a class="text-center btn btn-secondary" href="{% url 'register' %}"> Let's create a new Todo List </a>
+
+        <img src="{% static 'images/feature.jpg' %}" class="image-layout text-center img-fluid rounded mx-auto d-block" alt="">
+    </div>
+
+
+{% endblock %}
