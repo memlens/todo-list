@@ -18,15 +18,19 @@ This is a Django-based to-do list application that allows authenticated users to
 
 ### Home Page
 ![Home Page](todo/static/images/home.png)
+<img src="todo/static/images/home.png">
 
 ### Register Page
 ![Register Page](todo/static/images/register.png)
+<img src="todo/static/images/register.png">
 
 ### Login Page
 ![Login Page](todo/static/images/login.png)
+<img src="todo/static/images/login.png">
 
 ### Task Management
 ![Task Management](todo/static/images/tasks.png)
+<img src="todo/static/images/tasks.png">
 
 ### And More Just clone and enjoy !
 
